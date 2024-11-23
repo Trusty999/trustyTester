@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YA/TIDAK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-800 flex justify-center items-center h-screen">
+    <div
+      class="border border-2 border-gray-600 bg-white p-4 rounded-md shadow-lg shadow-slate-700 justify-center flex flex-col"
+    >
+      <img
+        id="gambar"
+        class="rounded-md mb-3"
+        src="https://media.tenor.com/GfSX-u7VGM4AAAAM/coding.gif"
+        width="280"
+        alt=""
+      />
+      <h1 class="font-bold text-slate-800 text-xl text-center" id="kalimat">
+        Apakah gua jago ngoding?
+      </h1>
+      <div class="mt-4 text-white justify-center flex gap-4">
+        <button
+          onclick="yaDitekan()"
+          id="tombolYa"
+          class="bg-green-700 px-4 py-1 rounded w-32"
+        >
+          YA
+        </button>
+        <button
+          id="tombolTidak"
+          onclick="tidakDitekan()"
+          class="bg-red-700 px-4 py-1 rounded w-32"
+        >
+          TIDAK
+        </button>
+      </div>
+    </div>
+    <script>
+      let tombolTidak = document.getElementById("tombolTidak");
+      let tombolYa = document.getElementById("tombolYa");
+
+      let listKalimat = [
+        "Coba Lagi",
+        "Udah jangan dipencet terus",
+        "Bilang iya aja",
+        "Mending Nyerah",
+        "KLIK YA!!!",
+      ];
+      let kalimat = document.getElementById("kalimat");
+      let gambar = document.getElementById("gambar");
+
+      function yaDitekan() {
+        kalimat.innerHTML = "Makasih pujiannya bro";
+        gambar.src =
+          "https://i.pinimg.com/originals/64/45/ee/6445ee2274a782a7c528303e9bd823d7.gif";
+        tombolYa.style.visibility = "hidden";
+        tombolTidak.style.visibility = "hidden";
+      }
+      function tidakDitekan() {
+        kalimatRandom = Math.floor(Math.random() * listKalimat.length);
+        kalimat.innerHTML = listKalimat[kalimatRandom];
+        tombolTidak.style.position = "absolute";
+        let angkaRandom = Math.floor(
+          Math.random() * document.documentElement.clientWidth
+        );
+        let angkaRandom2 = Math.floor(
+          Math.random() * document.documentElement.clientHeight
+        );
+        tombolTidak.style.left = angkaRandom + "px";
+        tombolTidak.style.top = angkaRandom2 + "px";
+      }
+    </script>
+  </body>
+</html>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- third -->
+<svg class="wavesss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#ffffff" fill-opacity="1"
+    d="M0,0L48,53.3C96,107,192,213,288,234.7C384,256,480,192,576,181.3C672,171,768,213,864,245.3C960,277,1056,299,1152,298.7C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+  </path>
+</svg>
+<div class="thirdContainer">
+  <h2 data-aos="fade-up" data-aos-duration="800" id="Projects" class="projects fw-bold">
+    ㅤPROJECTS
+  </h2>
+  <div class="categoryy">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div data-aos="fade-up" data-aos-duration="800" class="col">
+          <div class="article-container-firstRow text-uppercase mx-auto">
+            <a href="https://whatsapp.com/channel/0029VanurWUD38CRkMtlJa3k" style="text-decoration: none">
+              <div class="article-img-holder-firstRow">Internet Gratis</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row justify-content-md-center">
+            <div class="col">
+              <div class="article-container-secondRow text-uppercase mx-auto">
+                <a href="#" style="text-decoration: none">
+                  <div class="article-img-holder-secondRow tshirt">t-shirt</div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="article-container-secondRow text-uppercase mx-auto">
+                <a href="#" style="text-decoration: none">
+                  <div class="article-img-holder-secondRow outer">outer</div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="article-container-secondRow text-uppercase mx-auto">
+                <a href="#" style="text-decoration: none">
+                  <div class="article-img-holder-secondRow shirt">shirt</div>
+                </a>
+              </div>
+            </div>
+          </div> -->
+      <!-- <div class="row justify-content-md-center">
+            <div class="col">
+              <div class="article-container-secondRow text-uppercase mx-auto">
+                <a href="#" style="text-decoration: none">
+                  <div class="article-img-holder-secondRow pants">pants</div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="article-container-secondRow text-uppercase mx-auto">
+                <a href="#" style="text-decoration: none">
+                  <div class="article-img-holder-secondRow accessories">
+                    accessories
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="article-container-secondRow text-uppercase mx-auto">
+                <a href="#" style="text-decoration: none">
+                  <div class="article-img-holder-secondRow dress">DRESS</div>
+                </a>
+              </div>
+            </div>
+          </div> -->
+      <!-- <div class="row justify-content-md-center">
+            <div class="col">
+              <div class="article-container-thirdRow text-uppercase mx-auto">
+                <a href="#" style="text-decoration: none">
+                  <div class="article-img-holder-thirdRow kerudung">
+                    kerudung
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="article-container-thirdRow text-uppercase mx-auto">
+                <a href="#" style="text-decoration: none">
+                  <div class="article-img-holder-thirdRow rok">rok</div>
+                </a>
+              </div>
+            </div>
+          </div> -->
+    </div>
+  </div>
+</div>
+<svg class="botWaves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#ffffff" fill-opacity="1"
+    d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,181.3C672,181,768,235,864,229.3C960,224,1056,160,1152,138.7C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+  </path>
+</svg>
+
+<div class="fivethContainer">
+  <h2 id="Contact" class="contactMe fw-bold">CONTACT</h2>
+  <div class="container">
+    <div class="linkSosmed">
+      
+      <font color ="white"><a class="itemSosmed" href="https://instagram.com/namel_less226.c"><i class="fab fa-instagram"></i></a>
+      <a class="itemSosmed" href="https://www.tiktok.com/@fahruul.c"><i class="fab fa-tiktok"></i></a>
+      <a class="itemSosmed" href="https://youtube.com/@fahruul.c"><i class="fab fa-youtube"></i></a>
+      <a class="itemSosmed" href="fachrurrizhkyalfadillah@gmail.com"><i class="fab fa-google"></i></a>
+      <a class="itemSosmed" href="https://github.com/fahruulc"><i class="fab fa-github"></i></a></font>
+    </div>
+    <p class="text-center">Created by <a href="#"><font color ="Red">Trusty</font></a></p>
+  </div>
+</div>
+<script src="assets/stylesheet/app.js"></script>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
